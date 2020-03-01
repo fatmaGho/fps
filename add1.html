@@ -1,0 +1,21 @@
+<h4 >Gestion des clients</h4>
+<form action="" method="post" >
+    <tr>
+        <label>Nom</label>
+        <input autocomplete="off" id="nom" name="nom" required placeholder="Nom" >
+    <label>Prenom</label>
+        <input id="prenom" name="prenom" type="text" required autocomplete="off" >
+    <label>CIN</label>
+        <input  pattern="[0-9]{8}" title="CIN doit etre en 8 chiffres" id="cin" name="cin" type="text" required />
+    <label >Numero Telephonne</label>
+        <input class="form-control" id="tel" name="tel" type="number" required />
+    <label > Adresse Mail</label>
+        <input  id="mail" name="mail" required type="email" >
+    <label > Adresse</label>
+        <textarea  name="adresse" id="adresse" cols="20" rows="5"></textarea>
+    <label> Logo</label>
+        <input id="logo" name="logo" type="file" >
+    <button name="add" type="submit">Ajouter</button>
+    <button type="reset" >Annuler</button>
+    </tr>
+</form>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.bg 
+{
+background-image: url('Food.jpeg');
+background-repeat: no-repeat;
+margin-top:710px;
+position: relative; 
+background-size:1500px 820px;
+background-position:center;  
+}
+#t3
+{
+display:none;
+position:relative;
+}
+#t2
+{
+}
+#t3
+{
+}
+</style>
+<script>
+var w = document.getElementById("t3");
+var x = document.getElementById("t2");
+var y = document.getElementById("t1");
+function Commander()
+{
+if((w.style.display == "none")&& (x.value!="")&&(y.value!=""))
+{
+w.style.display = "block";
+}
+else 
+{
+w.style.display = "none";
+}
+}
+
+</script>
+</head>
+<body class="bg">
+<label id="NR"><b>Nom Restaurant :</b></label>
+<input type="text"id="t1">
+<label id="C"><b>Votre Commande :</b></label>
+<input type="text"id="t2">
+<input type="button" value="Commander" class="b1" onclick="Commander()"/>
+<label id="P"><b>Prix :</b></label>
+<input type="text"id="t3">
+</body>
+</html>
